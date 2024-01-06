@@ -22,6 +22,9 @@ export const TextProvider = (props : ContextProps) => {
 		"frontPageTitle": "Diverse Bluesky-verktøy",
 
 		"getSuggestions": "Generer liste med forslag til folk å følge",
+		"github": "Sjå koden på GitHub",
+
+		"hideMenu": "Skjul meny",
 
 		"loadingSuggestions": "Laster forslag ...",
 		"logIn": "Logg inn",
@@ -36,6 +39,8 @@ export const TextProvider = (props : ContextProps) => {
 		"postThread": "Publiser tråd",
 		"preview": "Førehandsvisning",
 		"previewIsShownHere": "Når du skriver inn ein tekst i tekstboksen, vil tråden din bli førehandsvist her.",
+
+		"showMenu": "Vis meny",
 		
 		"username": "Brukarnamn",
 

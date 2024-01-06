@@ -34,14 +34,18 @@ body {
 a {
 	color: var(--default-text);
 }
+
 .main-menu {
 	background: var(--main-menu-background);
 	color: var(--main-menu-text);
 }
 
+.hidden {
+	display: none;
+}
+
 .main-menu ul {
 	list-style-type: none;
-	display: flex;	
 }
 
 .main-menu li {
@@ -52,6 +56,36 @@ a {
 
 .main-menu a {
 	color: var(--white);
+}
+
+.menu-button {
+	display: block;
+	width: 100%;
+	color: var(--white);
+	background: var(--black);
+	padding: 1rem;
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-family: var(--default-font);
+	border: none;
+}
+
+.hide-menu button {
+	color: var(--white);
+	background: var(--black);
+	text-align: left;
+	font-weight: bold;
+	text-transform: uppercase;
+	font-size: 1rem;
+	font-family: var(--default-font);
+	text-decoration: underline;
+	border: none;
+}
+
+.menu-button.hidden {
+	display: none;
 }
 
 header {
@@ -196,6 +230,17 @@ button {
 	font-style: italic;
 }
 
+footer {
+	width: 60rem;
+	max-width: 100%;
+	margin: auto;
+	padding: 3rem var(--padding) 1rem;
+	text-align: center;
+}
+
+footer a {
+	display: block;
+}
 
 dialog label, dialog input {
 	display: block;
@@ -228,7 +273,22 @@ dialog button {
 
 @media screen and (min-width: 800px) {
 	.main-menu {
+		display: block;
 		background: var(--main-menu-background);
 		color: var(--main-menu-text);
+	}
+
+	.main-menu ul {
+		display: flex;	
+	}
+
+	.menu-button, .hide-menu {
+		display: none;
+	}
+
+	footer {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
 	}
 }
