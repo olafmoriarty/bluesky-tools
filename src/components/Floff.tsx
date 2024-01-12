@@ -44,10 +44,10 @@ const Floff = (props : { feedPost : BskyPost }) => {
 		<article className="floff">
 			{el.reply && el.reply.parent.author && typeof el.reply.parent.author === 'object' && "displayName" in el.reply.parent.author ? <p className="reply-to">Reply to {typeof el.reply.parent.author.displayName === "string" ? el.reply.parent.author.displayName : ""}</p> : null}
 
-			<div className="floff-header">
+			{el.post.author && el.post.author.handle ? <div className="floff-header">
 			<p className="floff-date"><a href={`https://bsky.app/profile/${el.post.author.handle}/post/${el.post.uri.substring(5).split('/')[2]}`} target="_blank">{formatDate(el.post.indexedAt)}</a></p>
 			<p className="floff-author">{el.post.author.displayName || el.post.author.handle} <span className="floff-handle">@{el.post.author.handle}</span></p>
-			</div>
+			</div> : null}
 
 			<div className="text">{text}</div>
 			
@@ -71,7 +71,7 @@ const Floff = (props : { feedPost : BskyPost }) => {
 				</div>
 				<div>
 					<p>{el.post.likeCount || 0} {t.likes}</p>
-					{!liked && el.post.author.handle !== handle ? <button onClick={() => likePost()}>{t.likePost}</button> : null}
+					{!liked && el.post.author?.handle !== handle ? <button onClick={() => likePost()}>{t.likePost}</button> : null}
 				</div>
 				<div>
 					<p>{el.post.repostCount || 0} {t.reposts}</p>
