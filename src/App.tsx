@@ -4,6 +4,7 @@ import Root from "./components/Root";
 import Threader from "./components/Threader";
 import Start from "./components/Start";
 import FindPeople from "./components/FindPeople";
+import Favstar from "./components/Favstar";
 
 function App() {
 
@@ -23,6 +24,10 @@ function App() {
 				{
 					path: 'find-people/',
 					element: <FindPeople />,
+				},
+				{
+					path: 'favstar/',
+					element: <Favstar />,
 				},
 			]
 		},

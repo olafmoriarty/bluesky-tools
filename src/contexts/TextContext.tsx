@@ -17,6 +17,8 @@ export const TextProvider = (props : ContextProps) => {
 
 		"findPeople": "Finn folk å følge",
 		"findPeopleDesc": "Skannar gjennom lista over folk du følger på Bluesky, finner ut kven dei folka følger, og gir deg ei liste over dei mest populære kontoane i din venekrets.",
+		"floffStar": "Floffstar",
+		"floffStarDesc": "Skriv inn handlen til ein person, og få opp ei liste over dei tjue mest populære floffane dei har skrive. Du kan klikke deg til floffen, eller like og refloffe direkte frå trefflista.",
 		"follow": "Følg",
 		"followedByXPeopleYouFollow": "Følgjast av minst {x} folk du følger",
 		"frontPageTitle": "Diverse Bluesky-verktøy",
@@ -26,6 +28,9 @@ export const TextProvider = (props : ContextProps) => {
 
 		"hideMenu": "Skjul meny",
 
+		"likePost": "Lik",
+		"likes": "likerklikk",
+		"loadErrorMessage": "Det oppstod ein feil under lasting, prøv igjen",
 		"loadingSuggestions": "Laster forslag ...",
 		"logIn": "Logg inn",
 		"logInErrorMessage": "Det oppstod ein feil under innlogging, prøv igjen",
@@ -36,9 +41,14 @@ export const TextProvider = (props : ContextProps) => {
 		"menuPeople": "Finn folk",
 		"menuThread": "Skriv tråd",
 
+		"postsLoaded": "{n} floffar lasta ...",
 		"postThread": "Publiser tråd",
 		"preview": "Førehandsvisning",
 		"previewIsShownHere": "Når du skriver inn ein tekst i tekstboksen, vil tråden din bli førehandsvist her.",
+
+		"replies": "svar",
+		"repostPost": "Refloff",
+		"reposts": "refloffar",
 
 		"showMenu": "Vis meny",
 		
